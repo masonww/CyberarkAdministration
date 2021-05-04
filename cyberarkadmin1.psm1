@@ -18,7 +18,7 @@
     try {
         Write-Verbose "Logging into REST API"
         $logonResult = Invoke-RestMethod -Method Post -Uri $uri -ContentType "application/json" -Body $authBody
-        $global:loginparams=@{
+        $script:loginparams=@{
             token=$logonResult
             PVWAhostName=$PVWAhostName 
         }
