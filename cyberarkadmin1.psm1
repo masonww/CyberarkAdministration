@@ -41,8 +41,8 @@ param(
 )
     $script:authM=$authmethod
     $script:CAENV=$environment
-    if($environment -eq "mdl"){$PVWAHost = "https://mdl.pmvault.newyorklife.com"}
-    if($environment -eq "prod"){$PVWAHost = "https://pmvault.newyorklife.com"}
+    if($environment -eq "mdl"){$PVWAHost = "https://<MDL PVWA Host>"}
+    if($environment -eq "prod"){$PVWAHost = "https://<PVWA Host>"}
     get-caWMToken -PVWAhostName $PVWAHost -AuthMethod $AuthMethod
 }
 
