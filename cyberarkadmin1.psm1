@@ -30,9 +30,6 @@
 }
 
 
-#$hostname = "https://mdl.pmvault.newyorklife.com"
-#$token=get-caWMToken -PVWAhostName $hostname -AuthMethod LDAP
-
 function New-CyberarkConnection{
 param(
     [Parameter(Mandatory=$true)]
